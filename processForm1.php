@@ -1,8 +1,8 @@
 <?php
 session_start();
 
-$SESSION['passengerFN']=$_post['firstname'];
-$SESSION['passengerSN']=$_post['surname'];
+$_SESSION['passengerFN']=$_POST['firstname'];
+$_SESSION['passengerSN']=$_POST['surname'];
 
 if (isset($_POST['luggage'])){
     $_SESSION['luggage']=1;
